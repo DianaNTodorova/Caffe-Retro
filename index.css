@@ -1,0 +1,167 @@
+/*font-family: "Poiret One", sans-serif;
+font-family: "Spirax", sans-serif;*/
+
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* === Navigation Bar === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Spirax', cursive;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
+/* === Section Base === */
+section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5em 1em 2em;
+}
+
+/* === Background Images === */
+#hot {
+  background-image: url('background-hot.jpg'); /* Use your own image or set in-line */
+  background-color: black;
+}
+
+#juice {
+  background-image: url('background-juice.jpg');
+  background-color: black;
+}
+
+#cozy {
+  background-image: url('background-cozy.jpg');
+  background-color: black;
+}
+
+/* === Headings === */
+h1 {
+  font-size: 6rem;
+  font-family: 'Spirax', cursive;
+  color: #a00000;
+  margin-bottom: 1rem;
+}
+
+/* === Paragraphs === */
+.intro-text,
+.sub-text {
+  background-color: rgba(150, 0, 0, 0.8);
+  padding: 0.8em 1.2em;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  max-width: 80%;
+  font-family: 'Poiret One', cursive;
+}
+
+/* === Menu Styles === */
+.menu {
+  margin-top: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5em 2em;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 0.4em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.item {
+  text-align: left;
+  flex: 1;
+}
+
+.price {
+  text-align: right;
+  flex: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .intro-text,
+  .sub-text {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .menu {
+    padding: 1em;
+  }
+
+  .menu li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    text-align: left;
+    margin-top: 0.2em;
+  }
+}
