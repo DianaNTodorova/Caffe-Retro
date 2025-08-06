@@ -68,17 +68,17 @@ section {
 
 /* === Background Images === */
 #hot {
-  background-image: url('background-hot.jpg'); /* Use your own image or set in-line */
+  background-image: url('/images/hot.jpg'); 
   background-color: black;
 }
 
-#juice {
-  background-image: url('background-juice.jpg');
+#juicy {
+  background-image: url('/images/juicy.jpg');
   background-color: black;
 }
 
 #cozy {
-  background-image: url('background-cozy.jpg');
+  background-image: url('/images/cosy.jpg');
   background-color: black;
 }
 
@@ -136,7 +136,7 @@ h1 {
 
 .price {
   text-align: right;
-  flex: 0;
+  flex: 1;
 }
 
 /* === Responsive === */
