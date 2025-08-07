@@ -150,15 +150,20 @@ intro-text{
 }
 
 /* === Responsive === */
+/* Mobile*/
 @media (max-width: 768px) {
   h1 {
     font-size: 4rem;
   }
 
-  .intro-text,
-  .sub-text {
+  .intro-text
+   {
     font-size: 1.1rem;
-    max-width: 90%;
+    width: 90%;
+    justify-self: center;
+  }
+  .sub-text{
+    display: none;
   }
 
   .menu {
@@ -166,12 +171,39 @@ intro-text{
   }
 
   .menu li {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
   .price {
-    text-align: left;
+    text-align: right;
     margin-top: 0.2em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  h1 {
+    font-size: 6rem; 
+  }
+
+  .intro-text,
+  .sub-text {
+    font-size: 1.5rem; 
+    max-width: 80%; 
+  }
+
+  .menu {
+    padding: 2em; 
+  }
+
+  .menu li {
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  .price {
+    text-align: right; 
+    margin-top: 0; 
   }
 }
